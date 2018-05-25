@@ -19,11 +19,11 @@ function generateprofile() {
 
       if (document.getElementById('vrijeinvoer').value.length < 50)
       {
-      alert("De tekst is tekort")
+      alert("De vrije invoer is te kort, minimaal 50 tekens.")
       }
       if (document.getElementById('vrijeinvoer').value.length > 2000)
       {
-      alert("De tekst is te lang")
+      alert("De vrije invoer is te lang, maximaal 2000 tekens.")
       }
     }
     function formReset() {
