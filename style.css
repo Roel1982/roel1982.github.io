@@ -1,0 +1,56 @@
+body
+{
+  background-image: url("rustic.jpg");
+  background-size: cover;
+ }
+
+p {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+h1 {
+  color: #FFF;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    text-align: right;
+    color: #FFF;
+    }
+
+label + input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+
+input + input {
+    float: right;
+}
+
+
+div.container {
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 75%;
+  border: 2px white;
+}
+
+div.box {
+  color: #FFFFFF;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  width: 75%;
+  border: 2px solid white;
+  float: left;
+}

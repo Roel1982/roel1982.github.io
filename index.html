@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hackaton Emmen Opdracht</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+<h1><center>Hackaton opdracht - Emmen - Team 1 </center></h1><br><br>
+<form id="frm1" onsubmit="generateprofile(); return false;">
+      <label>Naam: <input type="text" id="naam"></input><br />
+      Leeftijd: <input type="number" id="leeftijd"></input><br />
+      Woonplaats: <input type="text" id="woonplaats"></input><br /><br />
+
+      Gewenste baan 1: <input type="text" id="baan1"></input> <br />
+      Gewenste baan 2: <input type="text" id="baan2"></input> <br /><br /><br /><br />
+
+      Hoogst genoten opleiding: <input type="text" id="opleiding"></input><br />
+      Aantal uren per week beschikbaar: <input type="number" id="uren"></input><br /><br />
+
+      Welke vervoersmiddelen heb jij tot je beschikking: <select id="vervoerDropDown">
+        <option id="vervoer1">Fiets</option>
+<option id="vervoer2">Auto</option>
+<option id="vervoer3">Openbaar Vervoer</option>
+</select>
+
+
+<input type="hidden" id="vervoer1"></input> <br />
+ <input type="hidden" id="vervoer2"></input> <br />
+ <input type="hidden" id="vervoer3"></input> <br /><br />
+
+
+      3 Kernwoorden die jou beschrijven:  <input type="text"  id="kernwoord1"></input><br />
+                                          <input type="text" id="kernwoord2"></input><br />
+                                          <input type="text" id="kernwoord3"></input><br /><br />
+
+      Telefoonnummer: <input type="number"  id="telefoon"></input><br />
+      E-mail adres: <input type="email"  id="email"></input><br /><br />
+
+      Vrije invoer: <textarea id="vrijeinvoer" cols=75 rows=3></textarea><br />
+
+      <input type="submit" value="Verstuur">
+      <input type="button" onclick="formReset()" value="Reset"></label>
+   </form><br><br>
+
+
+  <div class="box">
+<p>Goededag, mijn naam is <b id= "nieuwenaam">Piet</b>, ik ben <b id= "nieuweleeftijd">10</b> en woonachtig in <b id= "nieuwewoonplaats">Amsterdam</b> en momenteel ben ik werkzoekende.<br/>
+Ik ben op zoek naar een baan als <b id= "nieuwebaan1">baan 1</b> of als <b id= "nieuwebaan2">baan 2</b>.<br/> Mijn hoogst genoten opleiding is <b id= "nieuweopleiding">Opleiding</b>.<br/>Ik ben gemotiveerd om snel te beginnen en ben voor <b id= "nieuweuren">20</b> uren per week beschikbaar.<br/>
+Ik beschik over de volgende vervoersmiddelen <b id = "nieuwvervoer1">A</b>, <b id = "nieuwvervoer2">B</b>, <b id = "nieuwvervoer3">C</b>.<br/>
+De volgende kernwoorden beschrijven mij: <b id= "nieuwkernwoord1">A</b>, <b id= "nieuwkernwoord2">B</b>, <b id= "nieuwkernwoord3">C</b>,
+Mocht u contact met mij willen opnemen dan kunt u mij bereiken via <b id= "nieuwtelefoon"> 06 - 1234 5679</b> of <b id= "nieuwemail"> info@naam.nl</b>
+ <div/>
+<br><br>
+
+Vrije Invoer:
+<div class="container">
+  <div class="box"><i id="nieuwvrijeinvoer">Nog geen vrije invoer ingegeven..</i></div>
+</div>
+           </p>
+<script src="java.js"></script>
+
+  </body>
+</html>
